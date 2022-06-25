@@ -199,17 +199,19 @@ def make_samples(filename_list, count_list, prob, sample_filename):
 
 if __name__ == "__main__":
     # ---------- Parameter ---------- #
-    chrom = "chr1"
+    chrom = "chr2"
     prob_num = 30
-    cri_filename = "criterion.sh"
-    ms_filename = "ms.txt"
-    ref_filename = "ref.fa"
-    read_filename = "m.sam"
-    dataset_filename = "dataset.sam"
+    cri_filename = "data/source/chr2.sh"
+    ms_filename = "data/source/signatures_probabilities.txt"
+    ref_filename = "data/source/hg19.fa"
+    read_filename = "data/source/chr2_1x.sam"
+    dataset_filename = "data/processed/dateset_chr2_1x.sam"
     # ---------- Parameter ---------- #
     
-    cri_pos_list = get_cri_pos(cri_filename, chrom)
-    base_pairs = get_ms_information(ms_filename, prob_num)
-    ref_data = get_ref_data(ref_filename, chr)
-    generate_dataset(read_filename, dataset_filename, cri_pos_list, base_pairs, ref_data, chr)
+    # cri_pos_list = get_cri_pos(cri_filename, chrom)
+    # base_pairs = get_ms_information(ms_filename, prob_num)
+    # ref_data = get_ref_data(ref_filename, chrom)
+    # generate_dataset(read_filename, dataset_filename, cri_pos_list, base_pairs, ref_data, chrom)
 
+    classify_dataset(dataset_filename)
+    make_samples([dataset_filename], [20000], 0.1, "data/processed/sample.sam")
