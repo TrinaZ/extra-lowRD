@@ -18,4 +18,6 @@ DETexT support the SAM file as the input and output filtered mutation in Variant
 ·  model structure
 ![image](https://user-images.githubusercontent.com/37039216/175775702-aa39a625-cd3f-41da-98da-25b398e933ef.png)
 
+![image](https://user-images.githubusercontent.com/37039216/175777720-74378b60-10aa-48ae-bfd1-f87066ef4fa3.png)
+
 ·  citation
