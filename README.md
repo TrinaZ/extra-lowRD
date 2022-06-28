@@ -22,12 +22,19 @@ DETexT support the SAM file as the input and output filtered mutation in Variant
 
 
 Possible disadvantages of the method: 
+
 	1) File processing time is not short enough 
+	
 	2) One-click operation is not fully integrated at the moment, you need to run the file in steps 
+	
 Ease of use for users are: 
+
 	1) simple network, easy to use and understand for non-computer professional users 
+	
 	2) simple to use, not too many dependency packages 
+	
 	3) low computing resource requirements, excellent results
+	
 
 
 ·  citation
