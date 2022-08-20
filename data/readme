@@ -10,4 +10,5 @@ Different read-pair depth simulation data generation methods:
 
   python wangshj**.py
 
-
+For example, if you need to generate simulation data for chromosome 1 with 1x read depth,
+run chr1.sh in the environment where GSDcreator is installed.
